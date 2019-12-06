@@ -1,4 +1,5 @@
-**NUCES-CIRCLE** is a social media platform that offers a unique experience offering a community for students of FAST-NUCES interested in technology to communicate.
+# NUCES-CIRCLE
+Nuces Circle is a social media platform that offers a unique experience offering a community for students of FAST-NUCES interested in technology to communicate.
 
 # Features
 ## Application features
