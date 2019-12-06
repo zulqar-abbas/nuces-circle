@@ -2,7 +2,6 @@
 Nuces Circle is a social media platform that offers a unique experience offering a community for students of FAST-NUCES interested in technology to communicate.
 
 # Features
-## Application features
 - An easy to use single page web application with responsive navbar. 
 - Full CRUD capabilities with restful API viewable with Swagger.
 - Fully functional MongoDB database with restrictions and validation.
