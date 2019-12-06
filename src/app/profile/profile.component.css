@@ -1,0 +1,54 @@
+/* profile mat-card for pofile information */
+.profile-card img{
+  border-radius: 20%;
+  padding: 3px;
+  border: 1px solid #ddd;
+  
+}
+
+/* Comment card settings for mat-card */
+.comment-card {
+  max-width: 450px;
+  min-width: 400px;
+  float: left;
+  margin: 15px;
+}
+
+/* Post title in mat-card */
+.post {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+/* Post card settings for users posts*/
+.post-card {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+/* Floats username left */
+.user {
+  float: left;
+}
+
+/* Scrollable div */
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* Scrollable div child div settings */
+div.scrollmenu div {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+button.user_buttons {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

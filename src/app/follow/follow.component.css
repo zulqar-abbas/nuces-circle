@@ -1,0 +1,51 @@
+/* Angular mat card for profile */
+.profile-card {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.mat-button-toggle-group {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.card{
+  border-radius: 10%;
+  color: lightslategray;
+  border: 3px solid blue;
+
+}
+h3 {
+  text-align: center;
+}
+
+/* Angular mat h3 tag */
+.profile-card h3 {
+  text-align: center;
+}
+
+/* Sets scrollable div tag */
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* Sets scrollable div tag */
+div.scrollmenu div {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Centres image */
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

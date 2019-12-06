@@ -1,0 +1,29 @@
+<!-- If there are no saved posts from given user -->
+<div *ngIf="!posts.length > 0">
+  <h1>{{id}} has no saved posts</h1>
+  <p>Tell {{id}} to save the post they enjoy.</p>
+</div>
+
+<!-- Loop through eahc elements in posts object -->
+<div *ngFor="let post of posts">
+  <!-- mat-card for each post -->
+  <mat-card class="post-card">
+    <mat-card-header>
+      <div mat-card-avatar class="post-header-image"></div>
+      <mat-card-title class="post">{{post.title}}</mat-card-title>
+      <mat-card-subtitle [routerLink]="['/profile/', post.subreddit]" class="user">{{post.subreddit}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="post.thumbnail" width="100" height="200">
+    <mat-card-content>
+      <p>
+        {{post.selftext}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button [routerLink]="['/post/', post._id]">VIEW</button>
+      <div *ngIf="userAPI.isLoggedIn() && username == id">
+        <button mat-button (click)="unsub(post._id)">UNSUBSCRIBE</button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>

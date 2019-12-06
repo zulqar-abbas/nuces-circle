@@ -1,0 +1,33 @@
+/* Angular mat card settings */
+.post-card {
+  max-width: 400px;
+  min-width: 400px;
+}
+
+/* Settings for username on posts */
+.user {
+  float: left;
+}
+
+/* Settings for title on posts */
+.post {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+/* Makes scrollable div */
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/* Makes scrollable div */
+div.scrollmenu div {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}

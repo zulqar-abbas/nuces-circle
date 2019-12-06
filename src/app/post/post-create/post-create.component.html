@@ -1,0 +1,36 @@
+<form class="form-signin" [formGroup]="postForm" (ngSubmit)="onFormSubmit(postForm.value)">
+    <h3>
+      Create post
+    </h3>
+  <mat-form-field>
+    <input matInput placeholder="Title" formControlName="title"
+           [errorStateMatcher]="matcher">
+    <mat-error>
+      <span *ngIf="!postForm.get('title').valid && postForm.get('title').touched">Please enter Title</span>
+    </mat-error>
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <input matInput placeholder="URL" formControlName="url"
+           [errorStateMatcher]="matcher">
+    <mat-error>
+      <span *ngIf="!postForm.get('url').valid && postForm.get('url').touched">Please enter URL</span>
+    </mat-error>
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field>
+    <input matInput placeholder="selftext" formControlName="selftext"
+           [errorStateMatcher]="matcher">
+    <mat-error>
+      <span *ngIf="!postForm.get('selftext').valid && postForm.get('selftext').touched">Please enter text</span>
+    </mat-error>
+  </mat-form-field>
+  
+  <div class="button-row">
+    <button type="submit" [disabled]="!postForm.valid" mat-raised-button color="primary"><mat-icon>send</mat-icon></button>
+  </div>
+</form>
